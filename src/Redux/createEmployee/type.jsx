@@ -1,0 +1,2 @@
+export const CREATE_EMPLOYEE = 'CREATE_EMPLOYEE'
+export const CLOSE_MODAL = 'CLOSE_MODAL'

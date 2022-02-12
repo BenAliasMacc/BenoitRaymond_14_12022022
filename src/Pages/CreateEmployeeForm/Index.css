@@ -1,0 +1,47 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 292px;
+    text-align: start;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 259px;
+    margin-top: 10px;
+}
+
+fieldset input {
+    width: 177px;
+}
+
+select {
+    width: 258px;
+    height: 33px;
+    border: 1px solid #c5c5c5;
+    background-color: #f6f6f6
+}
+
+option {
+    background-color: white;
+}
+
+button {
+    align-self: center;
+    margin-top: 20px;
+}
