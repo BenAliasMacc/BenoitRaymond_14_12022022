@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import DatePicker from '../../Components/DatePicker/DatePicker';
 import Modal from '../../Components/Modal/Modal';
-import { closeModal, createEmployee } from '../../Redux/createEmployee/actionCreateEmployee';
+import { createEmployee } from '../../Redux/createEmployee/actionCreateEmployee';
 import './Index.css'
+import DropDown from '../../Components/DropDown/Index';
 
 function CreateEmployeeForm() {
 
@@ -46,7 +47,7 @@ function CreateEmployeeForm() {
                     <input id="city" type="text" />
 
                     <label htmlFor="state">State</label>
-                    <select name="state" id="state"></select>
+                    <DropDown/>
 
                     <label htmlFor="zip-code">Zip Code</label>
                     <input id="zip-code" type="number" />
@@ -67,6 +68,7 @@ function CreateEmployeeForm() {
             </form>
 
             <Modal/>
+
         </main>
     );
 }
