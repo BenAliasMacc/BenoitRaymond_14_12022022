@@ -1,16 +1,15 @@
+import { useForm } from "react-hook-form";
 import { states } from "./states";
-import { useDispatch, useSelector } from 'react-redux';
 
-const DropDown = () => {
+const DropDown = ({register}) => {
 
-    console.log(states);
+   // const {register} = useForm()
 
     const listStates = states.map(state => <option key={state.abbreviation}>{state.name}</option>)
-    console.log(listStates);
 
     return (
         <div>
-            <select name="state" id="state">
+            <select name="state" id="state" {...register('state')}>
                 {listStates}
             </select>
         </div>

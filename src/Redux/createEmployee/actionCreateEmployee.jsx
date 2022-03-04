@@ -1,13 +1,8 @@
-import { CLOSE_MODAL, CREATE_EMPLOYEE } from "./type";
+import { CREATE_EMPLOYEE } from "./type";
 
-export const createEmployee = () => {
+export const createEmployee = data => {
     return {
-        type: CREATE_EMPLOYEE
-    }
-}
-
-export const closeModal = () => {
-    return {
-        type: CLOSE_MODAL
+        type: CREATE_EMPLOYEE,
+        payload: data
     }
 }

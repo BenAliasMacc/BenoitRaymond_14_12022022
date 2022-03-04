@@ -1,12 +1,14 @@
+import React from 'react'
 import { Provider } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import CreateEmployeeForm from './Pages/CreateEmployeeForm/Index';
 import ListEmployee from './Pages/ListEmployee';
 import store from "./Redux/store";
+import './App.css'
 
 function App() {
   return (
-    <Provider store={store}>
+    <Provider store={store} >
       <div className="App">
         <Routes>
           <Route path='/' element={<CreateEmployeeForm/>} />
